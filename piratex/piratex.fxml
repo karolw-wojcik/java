@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #3d4770;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane prefHeight="140.0" prefWidth="1280.0">
+            <children>
+                <ImageView fitHeight="120.0" fitWidth="120.0" layoutY="-5.0" onMouseClicked="#loadMain" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <image>
+                        <Image url="@logo.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#cccccc" layoutX="146.0" layoutY="99.14755249023438" onMouseClicked="#loadMain" stroke="#b91414" strokeWidth="0.0" text="PIRATEX" textAlignment="CENTER" wrappingWidth="445.3537902832031" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="28.0">
+                    <font>
+                        <Font name="Sitka Text" size="94.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="phrase" layoutX="613.0" layoutY="58.0" prefHeight="25.0" prefWidth="392.0" />
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="1026.0" layoutY="55.0" onMouseClicked="#loadSearch" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1026.0" AnchorPane.topAnchor="55.0">
+                    <image>
+                        <Image url="@search.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="104.0" fitWidth="114.0" layoutX="1122.0" layoutY="18.0" onMouseClicked="#setmenuvisible" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@user.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="-7.0" layoutY="140.0" prefHeight="660.0" prefWidth="1280.0">
+         <children>
+             <AnchorPane fx:id="invMenu" layoutX="1090.0" maxHeight="625.0" maxWidth="190.0" minHeight="190.0" minWidth="190.0" prefHeight="476.0" prefWidth="190.0" visible="false">
+                 <children>
+                     <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="60.0" layoutY="14.0" onMouseClicked="#loadInvestments" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@money.png" />
+                         </image>
+                     </ImageView>
+                     <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="60.0" layoutY="127.0" onMouseClicked="#loadAttacks" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@napady.png" />
+                         </image>
+                     </ImageView>
+                     <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="60.0" layoutY="241.0" onMouseClicked="#loadAccount" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@settings.png" />
+                         </image>
+                     </ImageView>
+                     <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="60.0" layoutY="362.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@logout.png" />
+                         </image>
+                     </ImageView>
+                  <Text layoutX="43.0" layoutY="121.0" onMouseClicked="#loadInvestments" strokeType="OUTSIDE" strokeWidth="0.0" text="Inwestycje" textAlignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="57.0" layoutY="226.0" onMouseClicked="#loadAttacks" strokeType="OUTSIDE" strokeWidth="0.0" text="Napady">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="40.0" layoutY="348.0" onMouseClicked="#loadAccount" strokeType="OUTSIDE" strokeWidth="0.0" text="Ustawienia">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="469.0" onMouseClicked="#logout" strokeType="OUTSIDE" strokeWidth="0.0" text="Wyloguj">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                 </children>
+             </AnchorPane>
+            <StackPane fx:id="insidePane" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1080.0" style="-fx-background-color: #3d4770;" AnchorPane.bottomAnchor="-14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="198.0" AnchorPane.topAnchor="14.0" />
+            <Label fx:id="time" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="1078.0" layoutY="476.0" prefHeight="185.0" prefWidth="202.0" text="Label" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="statusbar" layoutX="1103.0" layoutY="14.0" prefHeight="83.0" prefWidth="164.0" textFill="#87e081" visible="false">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    </children>
+</AnchorPane>

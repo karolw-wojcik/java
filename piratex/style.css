@@ -1,0 +1,27 @@
+.tab-pane *.tab-header-area *.tab-header-background {
+  -fx-background-color:transparent;
+}
+
+.tab-pane {
+  -fx-tab-min-width:200px;
+  -fx-tab-max-width:200px;
+  -fx-tab-min-height:58px;
+  -fx-tab-max-height:58px;
+}
+
+.tab {
+  -fx-font-family: Arial;
+  -fx-font-size: 18;
+  -fx-background-color:royalblue ;
+}
+
+.tab:selected {
+    -fx-background-color:blue ;
+}
+.scroll-pane > .viewport {
+   -fx-background-color:  #E3E3E3;
+}
+
+.scroll-pane {
+   -fx-background-color: transparent;
+}
